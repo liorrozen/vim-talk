@@ -36,7 +36,13 @@ Split window horizontal
 - `:split`
 - `:sp`
 
-Navigate between splits
+---
 
-- `<Ctrl+w> <direction>`
+## Navigate between buffers
 
+If mouse is enabled, you can click to move between splits/tabs
+Reordering tabs with dragging also works
+
+- `<Ctrl+w> <direction>` Navigate between splits
+- `tabnext` Next tab
+- `tabpreb` Previous tab

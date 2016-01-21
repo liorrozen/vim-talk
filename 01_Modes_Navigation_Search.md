@@ -23,9 +23,6 @@ NORMAL Mode
 - `^` - First non-whitespace character on current line
 - `$` - Last character on line (includes the newline character)
   - `g_` - Last non-whitespace character
-- `w` Forward one word
-- `b` Backward one word
-- `e` Goto end of word
 - `%` Jump to matching brackets
 - `gg` Goto begining of file
 - `G` Goto end of file
@@ -68,7 +65,9 @@ Previous with `N`
 
 - `zz` Center cursor in screen
 
-Config settings related to search:
-:set ignorecase		        " case insensitive search
-:set smartcase			        " case sensitive if uppercase
-:set incsearch			        " move the cursor to first result
+Config settings related to search:  
+```
+:set ignorecase		          " case insensitive search  
+:set smartcase			        " case sensitive if uppercase  
+:set incsearch			        " move the cursor to first result  
+```

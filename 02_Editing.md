@@ -1,9 +1,28 @@
+## Text Objects
+
+Words, Sentences, Paragraphs
+
+- `w` Forward one word
+- `b` Backward one word
+- `e` Goto end of word
+
+`<number><command><text object or motion>`
+
+Examples: 
+
+- `2dw` Delete two words
+- `dip` Delete inner paragraph
+- `dap` Delete all paragraph (include surrounding whitespace)
+
+---
+
 # Text Selection
 
 Use `v` / `<Shift-v>` / `<Ctrl+v>` to enter VISUAL
 
 - `V` VISUAL LINE select current line
-- `viw` VISUAL select current word
+- `viw` VISUAL select current word 
+- `vaw` VISUAL select current word (including whitespace)
 - `vip` VISUAL select current paragraph
 - `vi<wrapper>` VISUAL select text within wrapper
 - `va<wrapper>` VISUAL select text including wrapper
@@ -15,8 +34,8 @@ This should make more sense now.
   2. Enter Visual line mode
   3. Goto end of file (defining end of selection)
 
-- You can also use the mouse to made a VISUAL selection.
-  Config settings for mouse - requires specific compliation flags
+- You can also use the mouse to made a VISUAL selection.  
+  Config settings for mouse - requires specific compliation flags  
   `:set mouse=a				" enable mouse (disble with mouse= )`
 
 VISUAL BLOCK
@@ -64,3 +83,26 @@ entering visual mode. Just pass the line numbers:
 
 Confirm action - add the `c` flag to the substitution.
 `%s/this/that/gc`
+
+---
+
+# Repeat
+
+- `.` Repeats the last change made in NORMAL  
+  Example: `dw..` Delete one word and repeat it twice.  
+
+---
+
+# Undo / Redo
+
+> Vim added multilevel undo/redo
+
+- `u` Undo last action  
+- `<Ctrl-r>` Redo last action
+
+---
+
+# Auto Indent
+
+- `=` With a VISUAL selection, pressing this key will attempt to autoindent the file
+  according to it's filetype
