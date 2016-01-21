@@ -26,6 +26,8 @@ NORMAL Mode
 - `%` Jump to matching brackets
 - `gg` Goto begining of file
 - `G` Goto end of file
+- `*` Goto next occurance of word under cursor
+- `#` Goto previous occurance of word under cursor
 - `<Ctrl-e>` and `<Ctrl-y>` to scroll line-by-line in the file. 
 
 NORMAL into INSERT

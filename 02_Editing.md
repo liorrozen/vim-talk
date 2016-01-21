@@ -106,3 +106,10 @@ Confirm action - add the `c` flag to the substitution.
 
 - `=` With a VISUAL selection, pressing this key will attempt to autoindent the file
   according to it's filetype
+
+---
+
+# Text object under cursor
+
+- `<Ctrl+rw>` Place the word under the cursor into the comand line
+  This can be useful for commands and also searching
