@@ -12,6 +12,7 @@ needed to utilize them).
 We're talking about an era in which there was one central mainframe computer
 and users interacted with the mainframe through terminals.  This was basically
 a keyboard connected to a printer. Teleprinters, TeleTypewriter, TeleType.
+http://i.imgur.com/pUABKNZ.jpg
 
 What is TTY? in a linux/unix context?
 
